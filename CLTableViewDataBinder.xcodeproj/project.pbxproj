@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FC4CC3F2EA0F2F4004EAF40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FC4CC372EA0F2F4004EAF40 /* Assets.xcassets */; };
+		4FC4CC412EA0F2F4004EAF40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC4CC3A2EA0F2F4004EAF40 /* Main.storyboard */; };
+		4FC4CC422EA0F2F4004EAF40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC4CC392EA0F2F4004EAF40 /* LaunchScreen.storyboard */; };
+		4FC4CC432EA0F2F4004EAF40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC4CC362EA0F2F4004EAF40 /* AppDelegate.swift */; };
+		4FC4CC442EA0F2F4004EAF40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC4CC3B2EA0F2F4004EAF40 /* SceneDelegate.swift */; };
+		4FC4CC452EA0F2F4004EAF40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC4CC3C2EA0F2F4004EAF40 /* ViewController.swift */; };
+		4FC4CC492EA0F3F6004EAF40 /* CLTableViewDataBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC4CC482EA0F3F6004EAF40 /* CLTableViewDataBinder.swift */; };
+		4FC4CC4B2EA0F42F004EAF40 /* CLDataSourceItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC4CC4A2EA0F42F004EAF40 /* CLDataSourceItemProtocol.swift */; };
+		4FC4CC4D2EA0F447004EAF40 /* CLSectionItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC4CC4C2EA0F447004EAF40 /* CLSectionItemProtocol.swift */; };
+		4FC4CC4F2EA0F485004EAF40 /* CLRowItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC4CC4E2EA0F485004EAF40 /* CLRowItemProtocol.swift */; };
+		4FC4CC512EA0F4BE004EAF40 /* CLSectionHeaderFooterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC4CC502EA0F4BE004EAF40 /* CLSectionHeaderFooterProtocol.swift */; };
+		4FC4CC552EA0F53A004EAF40 /* CLRowCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC4CC542EA0F53A004EAF40 /* CLRowCellProtocol.swift */; };
+		FB42EB3D8522988481168A77 /* Pods_CLTableViewDataBinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE833DD443972A2A7C946B9 /* Pods_CLTableViewDataBinder.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4F6A56512EA0F26B001A903C /* CLTableViewDataBinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLTableViewDataBinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FC4CC362EA0F2F4004EAF40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4FC4CC372EA0F2F4004EAF40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FC4CC382EA0F2F4004EAF40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FC4CC3B2EA0F2F4004EAF40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4FC4CC3C2EA0F2F4004EAF40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4FC4CC3D2EA0F2F4004EAF40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4FC4CC3E2EA0F2F4004EAF40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4FC4CC482EA0F3F6004EAF40 /* CLTableViewDataBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLTableViewDataBinder.swift; sourceTree = "<group>"; };
+		4FC4CC4A2EA0F42F004EAF40 /* CLDataSourceItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLDataSourceItemProtocol.swift; sourceTree = "<group>"; };
+		4FC4CC4C2EA0F447004EAF40 /* CLSectionItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLSectionItemProtocol.swift; sourceTree = "<group>"; };
+		4FC4CC4E2EA0F485004EAF40 /* CLRowItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLRowItemProtocol.swift; sourceTree = "<group>"; };
+		4FC4CC502EA0F4BE004EAF40 /* CLSectionHeaderFooterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLSectionHeaderFooterProtocol.swift; sourceTree = "<group>"; };
+		4FC4CC542EA0F53A004EAF40 /* CLRowCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLRowCellProtocol.swift; sourceTree = "<group>"; };
+		6324F4CA3A887C76C142E20F /* Pods-CLTableViewDataBinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLTableViewDataBinder.debug.xcconfig"; path = "Target Support Files/Pods-CLTableViewDataBinder/Pods-CLTableViewDataBinder.debug.xcconfig"; sourceTree = "<group>"; };
+		73266D72961F9466D25CE069 /* Pods-CLTableViewDataBinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLTableViewDataBinder.release.xcconfig"; path = "Target Support Files/Pods-CLTableViewDataBinder/Pods-CLTableViewDataBinder.release.xcconfig"; sourceTree = "<group>"; };
+		8EE833DD443972A2A7C946B9 /* Pods_CLTableViewDataBinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CLTableViewDataBinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F6A564E2EA0F26B001A903C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB42EB3D8522988481168A77 /* Pods_CLTableViewDataBinder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F6A56482EA0F26B001A903C = {
+			isa = PBXGroup;
+			children = (
+				4FC4CC472EA0F3B6004EAF40 /* CLTableViewDataBinder */,
+				4FC4CC362EA0F2F4004EAF40 /* AppDelegate.swift */,
+				4FC4CC372EA0F2F4004EAF40 /* Assets.xcassets */,
+				4FC4CC382EA0F2F4004EAF40 /* Info.plist */,
+				4FC4CC392EA0F2F4004EAF40 /* LaunchScreen.storyboard */,
+				4FC4CC3A2EA0F2F4004EAF40 /* Main.storyboard */,
+				4FC4CC3B2EA0F2F4004EAF40 /* SceneDelegate.swift */,
+				4FC4CC3C2EA0F2F4004EAF40 /* ViewController.swift */,
+				4F6A56522EA0F26B001A903C /* Products */,
+				AC34B17FAE5C20BB9E887490 /* Pods */,
+				B4912FC82BB4B541C9B25B54 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4F6A56522EA0F26B001A903C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F6A56512EA0F26B001A903C /* CLTableViewDataBinder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FC4CC472EA0F3B6004EAF40 /* CLTableViewDataBinder */ = {
+			isa = PBXGroup;
+			children = (
+				4FC4CC482EA0F3F6004EAF40 /* CLTableViewDataBinder.swift */,
+				4FC4CC4A2EA0F42F004EAF40 /* CLDataSourceItemProtocol.swift */,
+				4FC4CC4C2EA0F447004EAF40 /* CLSectionItemProtocol.swift */,
+				4FC4CC4E2EA0F485004EAF40 /* CLRowItemProtocol.swift */,
+				4FC4CC502EA0F4BE004EAF40 /* CLSectionHeaderFooterProtocol.swift */,
+				4FC4CC542EA0F53A004EAF40 /* CLRowCellProtocol.swift */,
+			);
+			path = CLTableViewDataBinder;
+			sourceTree = "<group>";
+		};
+		AC34B17FAE5C20BB9E887490 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6324F4CA3A887C76C142E20F /* Pods-CLTableViewDataBinder.debug.xcconfig */,
+				73266D72961F9466D25CE069 /* Pods-CLTableViewDataBinder.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B4912FC82BB4B541C9B25B54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EE833DD443972A2A7C946B9 /* Pods_CLTableViewDataBinder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F6A56502EA0F26B001A903C /* CLTableViewDataBinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F6A56642EA0F26C001A903C /* Build configuration list for PBXNativeTarget "CLTableViewDataBinder" */;
+			buildPhases = (
+				BF31DEAA9E4BD7319618D514 /* [CP] Check Pods Manifest.lock */,
+				4F6A564D2EA0F26B001A903C /* Sources */,
+				4F6A564E2EA0F26B001A903C /* Frameworks */,
+				4F6A564F2EA0F26B001A903C /* Resources */,
+				1DBC3DA0FE3DBAA1CA02F904 /* [CP] Embed Pods Frameworks */,
+				4FC4CC562EA0F5D9004EAF40 /* SwiftFormat */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CLTableViewDataBinder;
+			productName = CLTableViewDataBinder;
+			productReference = 4F6A56512EA0F26B001A903C /* CLTableViewDataBinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F6A56492EA0F26B001A903C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					4F6A56502EA0F26B001A903C = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = 4F6A564C2EA0F26B001A903C /* Build configuration list for PBXProject "CLTableViewDataBinder" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F6A56482EA0F26B001A903C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4F6A56522EA0F26B001A903C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F6A56502EA0F26B001A903C /* CLTableViewDataBinder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F6A564F2EA0F26B001A903C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FC4CC3F2EA0F2F4004EAF40 /* Assets.xcassets in Resources */,
+				4FC4CC412EA0F2F4004EAF40 /* Main.storyboard in Resources */,
+				4FC4CC422EA0F2F4004EAF40 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DBC3DA0FE3DBAA1CA02F904 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CLTableViewDataBinder/Pods-CLTableViewDataBinder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CLTableViewDataBinder/Pods-CLTableViewDataBinder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CLTableViewDataBinder/Pods-CLTableViewDataBinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FC4CC562EA0F5D9004EAF40 /* SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftFormat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" . --exclude Carthage,Pods --swiftversion \"5.0\" --disable unusedArguments\n";
+		};
+		BF31DEAA9E4BD7319618D514 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CLTableViewDataBinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F6A564D2EA0F26B001A903C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FC4CC432EA0F2F4004EAF40 /* AppDelegate.swift in Sources */,
+				4FC4CC442EA0F2F4004EAF40 /* SceneDelegate.swift in Sources */,
+				4FC4CC4B2EA0F42F004EAF40 /* CLDataSourceItemProtocol.swift in Sources */,
+				4FC4CC4D2EA0F447004EAF40 /* CLSectionItemProtocol.swift in Sources */,
+				4FC4CC512EA0F4BE004EAF40 /* CLSectionHeaderFooterProtocol.swift in Sources */,
+				4FC4CC552EA0F53A004EAF40 /* CLRowCellProtocol.swift in Sources */,
+				4FC4CC492EA0F3F6004EAF40 /* CLTableViewDataBinder.swift in Sources */,
+				4FC4CC4F2EA0F485004EAF40 /* CLRowItemProtocol.swift in Sources */,
+				4FC4CC452EA0F2F4004EAF40 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4FC4CC392EA0F2F4004EAF40 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FC4CC3E2EA0F2F4004EAF40 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4FC4CC3A2EA0F2F4004EAF40 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FC4CC3D2EA0F2F4004EAF40 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F6A56652EA0F26C001A903C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6324F4CA3A887C76C142E20F /* Pods-CLTableViewDataBinder.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 533J5B8T42;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JmoVxia.Demo.CLTableViewDataBinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F6A56662EA0F26C001A903C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73266D72961F9466D25CE069 /* Pods-CLTableViewDataBinder.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 533J5B8T42;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JmoVxia.Demo.CLTableViewDataBinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4F6A56672EA0F26C001A903C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 533J5B8T42;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F6A56682EA0F26C001A903C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 533J5B8T42;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F6A564C2EA0F26B001A903C /* Build configuration list for PBXProject "CLTableViewDataBinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F6A56672EA0F26C001A903C /* Debug */,
+				4F6A56682EA0F26C001A903C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F6A56642EA0F26C001A903C /* Build configuration list for PBXNativeTarget "CLTableViewDataBinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F6A56652EA0F26C001A903C /* Debug */,
+				4F6A56662EA0F26C001A903C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F6A56492EA0F26B001A903C /* Project object */;
+}
