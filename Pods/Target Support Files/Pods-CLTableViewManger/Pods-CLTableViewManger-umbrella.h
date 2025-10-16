@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_CLTableViewDataBinderVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_CLTableViewDataBinderVersionString[];
+FOUNDATION_EXPORT double Pods_CLTableViewMangerVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_CLTableViewMangerVersionString[];
 

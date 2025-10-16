@@ -1,11 +1,22 @@
 //
 //  CLSectionItemProtocol.swift
-//  CLTableViewDataBinder
+//  CLTableViewManger
 //
 //  Created by JmoVxia on 2025/10/16.
 //
 
 import UIKit
+
+private var rowsKey: UInt8 = 0
+private var willDisplayHeaderKey: UInt8 = 0
+private var didEndDisplayingHeaderKey: UInt8 = 0
+private var viewForHeaderKey: UInt8 = 0
+private var didSelectHeaderKey: UInt8 = 0
+
+private var willDisplayFooterKey: UInt8 = 0
+private var didEndDisplayingFooterKey: UInt8 = 0
+private var viewForFooterKey: UInt8 = 0
+private var didSelectFooterKey: UInt8 = 0
 
 /// 表示一个 TableView 的分区模型协议（Section Item）
 public protocol CLSectionItemProtocol: CLDataSourceItemProtocol {
@@ -62,34 +73,31 @@ public protocol CLSectionItemProtocol: CLDataSourceItemProtocol {
 }
 
 public extension CLSectionItemProtocol {
-    // MARK: - 默认实现
-
     var rows: [CLRowItemProtocol] {
-        get { [] }
-        set {}
+        get { objc_getAssociatedObject(self, &rowsKey) as? [CLRowItemProtocol] ?? [] }
+        set { objc_setAssociatedObject(self, &rowsKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
     }
 
-    // Header
     var willDisplayHeader: ((Int) -> Void)? {
-        get { nil }
-        set {}
+        get { objc_getAssociatedObject(self, &willDisplayHeaderKey) as? ((Int) -> Void) }
+        set { objc_setAssociatedObject(self, &willDisplayHeaderKey, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC) }
     }
 
     var didEndDisplayingHeader: ((Int) -> Void)? {
-        get { nil }
-        set {}
+        get { objc_getAssociatedObject(self, &didEndDisplayingHeaderKey) as? ((Int) -> Void) }
+        set { objc_setAssociatedObject(self, &didEndDisplayingHeaderKey, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC) }
     }
 
     var viewForHeader: ((Int) -> Void)? {
-        get { nil }
-        set {}
+        get { objc_getAssociatedObject(self, &viewForHeaderKey) as? ((Int) -> Void) }
+        set { objc_setAssociatedObject(self, &viewForHeaderKey, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC) }
     }
 
     var didSelectHeader: ((Int) -> Void)? {
-        get { nil }
-        set {}
+        get { objc_getAssociatedObject(self, &didSelectHeaderKey) as? ((Int) -> Void) }
+        set { objc_setAssociatedObject(self, &didSelectHeaderKey, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC) }
     }
-
+    
     var headerHeight: CGFloat {
         UITableView.automaticDimension
     }
@@ -98,25 +106,24 @@ public extension CLSectionItemProtocol {
         nil
     }
 
-    // Footer
     var willDisplayFooter: ((Int) -> Void)? {
-        get { nil }
-        set {}
+        get { objc_getAssociatedObject(self, &willDisplayFooterKey) as? ((Int) -> Void) }
+        set { objc_setAssociatedObject(self, &willDisplayFooterKey, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC) }
     }
 
     var didEndDisplayingFooter: ((Int) -> Void)? {
-        get { nil }
-        set {}
+        get { objc_getAssociatedObject(self, &didEndDisplayingFooterKey) as? ((Int) -> Void) }
+        set { objc_setAssociatedObject(self, &didEndDisplayingFooterKey, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC) }
     }
 
     var viewForFooter: ((Int) -> Void)? {
-        get { nil }
-        set {}
+        get { objc_getAssociatedObject(self, &viewForFooterKey) as? ((Int) -> Void) }
+        set { objc_setAssociatedObject(self, &viewForFooterKey, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC) }
     }
 
     var didSelectFooter: ((Int) -> Void)? {
-        get { nil }
-        set {}
+        get { objc_getAssociatedObject(self, &didSelectFooterKey) as? ((Int) -> Void) }
+        set { objc_setAssociatedObject(self, &didSelectFooterKey, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC) }
     }
 
     var footerHeight: CGFloat {

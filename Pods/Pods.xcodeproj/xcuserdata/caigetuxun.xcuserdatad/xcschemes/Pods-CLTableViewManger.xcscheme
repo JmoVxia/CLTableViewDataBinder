@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1640"
+   LastUpgradeVersion = "1600"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F20066E0CB81ABF309CD2B4CC274B435"
-               BuildableName = "Pods_CLTableViewDataBinder.framework"
-               BlueprintName = "Pods-CLTableViewDataBinder"
+               BlueprintIdentifier = "513FE2600492F00F04349B9E0F34F5EC"
+               BuildableName = "Pods_CLTableViewManger.framework"
+               BlueprintName = "Pods-CLTableViewManger"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

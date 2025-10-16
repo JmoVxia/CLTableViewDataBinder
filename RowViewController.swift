@@ -1,28 +1,36 @@
 //
-//  ViewController.swift
+//  RowViewController.swift
 //  CLTableViewManger
 //
-//  Created by JmoVxia on 2025/10/16.
+//  Created by 菜鸽途讯 on 2025/10/16.
 //
 
 import UIKit
 
 // MARK: - JmoVxia---类-属性
+class RowViewController: UIViewController {
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
 
-class ViewController: UIViewController {
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
     deinit {}
 
-    private let dataBinder = CLTableViewRowManager()
+    private let driver = CLTableViewRowManager()
 
     private lazy var tableView: UITableView = {
         let view = UITableView(frame: .zero, style: .plain)
-        view.dataSource = dataBinder
-        view.delegate = dataBinder
+        view.dataSource = driver
+        view.delegate = driver
         view.showsVerticalScrollIndicator = false
         view.showsHorizontalScrollIndicator = false
         view.separatorStyle = .none
         view.backgroundColor = .clear
-        view.estimatedRowHeight = 100
+        view.estimatedRowHeight = 500
         view.estimatedSectionHeaderHeight = 0
         view.estimatedSectionFooterHeight = 0
         view.contentInset = .zero
@@ -39,7 +47,7 @@ class ViewController: UIViewController {
 
 // MARK: - JmoVxia---生命周期
 
-extension ViewController {
+extension RowViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
@@ -70,8 +78,9 @@ extension ViewController {
 
 // MARK: - JmoVxia---布局
 
-private extension ViewController {
+private extension RowViewController {
     func setupUI() {
+        view.backgroundColor = .white
         view.addSubview(tableView)
     }
 
@@ -85,25 +94,16 @@ private extension ViewController {
 
 // MARK: - JmoVxia---数据
 
-private extension ViewController {
+private extension RowViewController {
     func configData() {
-        do{
+        for index in 0...40 {
             let item = CLAboutItem()
-            item.title = "Row"
-            item.subtitle = "点击进入Row"
-            item.didSelect = { [weak self] index in
-                self?.present(RowViewController(), animated: true)
+            item.title = "\(index)"
+            item.subtitle = "点击打印"
+            item.didSelect = { index in
+                print(index)
             }
-            dataBinder.dataSource.append(item)
-        }
-        do{
-            let item = CLAboutItem()
-            item.title = "Section"
-            item.subtitle = "点击进入Section"
-            item.didSelect = { [weak self] index in
-                self?.present(SectionViewController(), animated: true)
-            }
-            dataBinder.dataSource.append(item)
+            driver.dataSource.append(item)
         }
         tableView.reloadData()
     }
@@ -111,16 +111,16 @@ private extension ViewController {
 
 // MARK: - JmoVxia---override
 
-extension ViewController {}
+extension RowViewController {}
 
 // MARK: - JmoVxia---objc
 
-@objc private extension ViewController {}
+@objc private extension RowViewController {}
 
 // MARK: - JmoVxia---私有方法
 
-private extension ViewController {}
+private extension RowViewController {}
 
 // MARK: - JmoVxia---公共方法
 
-extension ViewController {}
+extension RowViewController {}

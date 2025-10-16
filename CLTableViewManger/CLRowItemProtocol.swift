@@ -1,11 +1,17 @@
 //
 //  CLRowItemProtocol.swift
-//  CLTableViewDataBinder
+//  CLTableViewManger
 //
 //  Created by JmoVxia on 2025/10/16.
 //
 
 import UIKit
+
+private var willDisplayKey: UInt8 = 0
+private var didEndDisplayingKey: UInt8 = 0
+private var cellForRowKey: UInt8 = 0
+private var didSelectKey: UInt8 = 0
+private var cellHeightKey: UInt8 = 0
 
 /// 表示一个 TableView 的行模型协议（Row Item）
 public protocol CLRowItemProtocol: CLDataSourceItemProtocol {
@@ -40,23 +46,23 @@ public protocol CLRowItemProtocol: CLDataSourceItemProtocol {
 
 public extension CLRowItemProtocol {
     var willDisplay: ((IndexPath) -> Void)? {
-        get { nil }
-        set {}
+        get { objc_getAssociatedObject(self, &willDisplayKey) as? ((IndexPath) -> Void) }
+        set { objc_setAssociatedObject(self, &willDisplayKey, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC) }
     }
 
     var didEndDisplaying: ((IndexPath) -> Void)? {
-        get { nil }
-        set {}
+        get { objc_getAssociatedObject(self, &didEndDisplayingKey) as? ((IndexPath) -> Void) }
+        set { objc_setAssociatedObject(self, &didEndDisplayingKey, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC) }
     }
 
     var cellForRow: ((IndexPath) -> Void)? {
-        get { nil }
-        set {}
+        get { objc_getAssociatedObject(self, &cellForRowKey) as? ((IndexPath) -> Void) }
+        set { objc_setAssociatedObject(self, &cellForRowKey, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC) }
     }
 
     var didSelect: ((IndexPath) -> Void)? {
-        get { nil }
-        set {}
+        get { objc_getAssociatedObject(self, &didSelectKey) as? ((IndexPath) -> Void) }
+        set { objc_setAssociatedObject(self, &didSelectKey, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC) }
     }
 
     var cellHeight: CGFloat {

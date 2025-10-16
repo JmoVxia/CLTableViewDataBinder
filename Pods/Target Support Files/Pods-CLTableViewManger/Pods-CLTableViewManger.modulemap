@@ -1,0 +1,6 @@
+framework module Pods_CLTableViewManger {
+  umbrella header "Pods-CLTableViewManger-umbrella.h"
+
+  export *
+  module * { export * }
+}

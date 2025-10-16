@@ -1,30 +1,29 @@
 //
-//  ViewController.swift
+//  SectionViewController.swift
 //  CLTableViewManger
 //
-//  Created by JmoVxia on 2025/10/16.
+//  Created by 菜鸽途讯 on 2025/10/16.
 //
 
 import UIKit
 
 // MARK: - JmoVxia---类-属性
-
-class ViewController: UIViewController {
+class SectionViewController: UIViewController {
     deinit {}
 
-    private let dataBinder = CLTableViewRowManager()
+    private let driver = CLTableViewSectionManager()
 
     private lazy var tableView: UITableView = {
         let view = UITableView(frame: .zero, style: .plain)
-        view.dataSource = dataBinder
-        view.delegate = dataBinder
+        view.dataSource = driver
+        view.delegate = driver
         view.showsVerticalScrollIndicator = false
         view.showsHorizontalScrollIndicator = false
         view.separatorStyle = .none
         view.backgroundColor = .clear
-        view.estimatedRowHeight = 100
-        view.estimatedSectionHeaderHeight = 0
-        view.estimatedSectionFooterHeight = 0
+        view.estimatedRowHeight = 80
+        view.estimatedSectionHeaderHeight = 60
+        view.estimatedSectionFooterHeight = 60
         view.contentInset = .zero
         view.contentInsetAdjustmentBehavior = .never
         if #available(iOS 13.0, *) {
@@ -39,7 +38,7 @@ class ViewController: UIViewController {
 
 // MARK: - JmoVxia---生命周期
 
-extension ViewController {
+extension SectionViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
@@ -70,8 +69,9 @@ extension ViewController {
 
 // MARK: - JmoVxia---布局
 
-private extension ViewController {
+private extension SectionViewController {
     func setupUI() {
+        view.backgroundColor = .white
         view.addSubview(tableView)
     }
 
@@ -85,42 +85,45 @@ private extension ViewController {
 
 // MARK: - JmoVxia---数据
 
-private extension ViewController {
+private extension SectionViewController {
     func configData() {
-        do{
-            let item = CLAboutItem()
-            item.title = "Row"
-            item.subtitle = "点击进入Row"
-            item.didSelect = { [weak self] index in
-                self?.present(RowViewController(), animated: true)
-            }
-            dataBinder.dataSource.append(item)
+        let section = CLSectionItem()
+        section.didSelectFooter = {index in
+            print("点击footer\(index)")
         }
-        do{
-            let item = CLAboutItem()
-            item.title = "Section"
-            item.subtitle = "点击进入Section"
-            item.didSelect = { [weak self] index in
-                self?.present(SectionViewController(), animated: true)
-            }
-            dataBinder.dataSource.append(item)
+        section.didSelectHeader = {index in
+            print("点击header\(index)")
         }
+        section.headTitle = NSMutableAttributedString(string: "我是Section Head")
+        section.footerTitle = NSMutableAttributedString(string: "我是Section footer")
+        section.rows.append({
+            let item = CLAboutItem()
+            item.title = "row标题"
+            item.subtitle = "row副标题"
+            item.didSelect = { index in
+                print(index)
+            }
+            return item
+        }())
+        driver.dataSource.append(section)
+        driver.dataSource.append(section)
+        
         tableView.reloadData()
     }
 }
 
 // MARK: - JmoVxia---override
 
-extension ViewController {}
+extension SectionViewController {}
 
 // MARK: - JmoVxia---objc
 
-@objc private extension ViewController {}
+@objc private extension SectionViewController {}
 
 // MARK: - JmoVxia---私有方法
 
-private extension ViewController {}
+private extension SectionViewController {}
 
 // MARK: - JmoVxia---公共方法
 
-extension ViewController {}
+extension SectionViewController {}

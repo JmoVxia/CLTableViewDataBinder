@@ -5,7 +5,7 @@ use_frameworks!
 inhibit_all_warnings!
 install! 'cocoapods', :deterministic_uuids => false
 
-target 'CLTableViewDataBinder' do
+target 'CLTableViewManger' do
     inhibit_all_warnings!
     pod 'LookinServer', :subspecs => ['Swift'], :configurations => ['Debug']
     pod 'SnapKit'

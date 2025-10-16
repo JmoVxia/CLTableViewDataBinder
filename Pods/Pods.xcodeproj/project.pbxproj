@@ -201,8 +201,8 @@
 		46EB2E00001A00 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000019F0 /* SnapKit-dummy.m */; };
 		46EB2E00001A90 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E00001A80 /* UIKit.framework */; };
 		46EB2E00001B30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E00000CA0 /* Foundation.framework */; };
-		46EB2E00001BA0 /* Pods-CLTableViewDataBinder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00001B90 /* Pods-CLTableViewDataBinder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46EB2E00001BF0 /* Pods-CLTableViewDataBinder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00001BE0 /* Pods-CLTableViewDataBinder-dummy.m */; };
+		46EB2E00001BA0 /* Pods-CLTableViewManger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00001B90 /* Pods-CLTableViewManger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46EB2E00001BF0 /* Pods-CLTableViewManger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00001BE0 /* Pods-CLTableViewManger-dummy.m */; };
 		46EB2E00001C80 /* SnapKit-SnapKit_Privacy in Resources */ = {isa = PBXBuildFile; fileRef = B9DCB5EC0B1CDADD221717CADDF62359 /* SnapKit-SnapKit_Privacy */; };
 /* End PBXBuildFile section */
 
@@ -433,17 +433,17 @@
 		46EB2E00001A60 /* SwiftFormat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftFormat.debug.xcconfig; sourceTree = "<group>"; };
 		46EB2E00001A70 /* SwiftFormat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftFormat.release.xcconfig; sourceTree = "<group>"; };
 		46EB2E00001A80 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		46EB2E00001B50 /* Pods-CLTableViewDataBinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CLTableViewDataBinder.release.xcconfig"; sourceTree = "<group>"; };
-		46EB2E00001B60 /* Pods-CLTableViewDataBinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CLTableViewDataBinder.debug.xcconfig"; sourceTree = "<group>"; };
-		46EB2E00001B70 /* Pods-CLTableViewDataBinder-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CLTableViewDataBinder-Info.plist"; sourceTree = "<group>"; };
-		46EB2E00001B80 /* Pods-CLTableViewDataBinder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CLTableViewDataBinder.modulemap"; sourceTree = "<group>"; };
-		46EB2E00001B90 /* Pods-CLTableViewDataBinder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CLTableViewDataBinder-umbrella.h"; sourceTree = "<group>"; };
-		46EB2E00001BB0 /* Pods-CLTableViewDataBinder-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CLTableViewDataBinder-frameworks.sh"; sourceTree = "<group>"; };
-		46EB2E00001BC0 /* Pods-CLTableViewDataBinder-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CLTableViewDataBinder-acknowledgements.plist"; sourceTree = "<group>"; };
-		46EB2E00001BD0 /* Pods-CLTableViewDataBinder-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CLTableViewDataBinder-acknowledgements.markdown"; sourceTree = "<group>"; };
-		46EB2E00001BE0 /* Pods-CLTableViewDataBinder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CLTableViewDataBinder-dummy.m"; sourceTree = "<group>"; };
-		96F135ABC5533813986A90ABA0DA9F09 /* Pods-CLTableViewDataBinder */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CLTableViewDataBinder"; path = Pods_CLTableViewDataBinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46EB2E00001B50 /* Pods-CLTableViewManger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CLTableViewManger.release.xcconfig"; sourceTree = "<group>"; };
+		46EB2E00001B60 /* Pods-CLTableViewManger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CLTableViewManger.debug.xcconfig"; sourceTree = "<group>"; };
+		46EB2E00001B70 /* Pods-CLTableViewManger-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CLTableViewManger-Info.plist"; sourceTree = "<group>"; };
+		46EB2E00001B80 /* Pods-CLTableViewManger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CLTableViewManger.modulemap"; sourceTree = "<group>"; };
+		46EB2E00001B90 /* Pods-CLTableViewManger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CLTableViewManger-umbrella.h"; sourceTree = "<group>"; };
+		46EB2E00001BB0 /* Pods-CLTableViewManger-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CLTableViewManger-frameworks.sh"; sourceTree = "<group>"; };
+		46EB2E00001BC0 /* Pods-CLTableViewManger-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CLTableViewManger-acknowledgements.plist"; sourceTree = "<group>"; };
+		46EB2E00001BD0 /* Pods-CLTableViewManger-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CLTableViewManger-acknowledgements.markdown"; sourceTree = "<group>"; };
+		46EB2E00001BE0 /* Pods-CLTableViewManger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CLTableViewManger-dummy.m"; sourceTree = "<group>"; };
 		979486118B3E90C08386079D57962701 /* SnapKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6A8A1DABE8EEFE30F3F1568614CA417 /* Pods-CLTableViewManger */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CLTableViewManger"; path = Pods_CLTableViewManger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9DCB5EC0B1CDADD221717CADDF62359 /* SnapKit-SnapKit_Privacy */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "SnapKit-SnapKit_Privacy"; path = SnapKit_Privacy.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -498,7 +498,7 @@
 			isa = PBXGroup;
 			children = (
 				25664483ABF4DC8EC03E7472AA04333B /* LookinServer */,
-				96F135ABC5533813986A90ABA0DA9F09 /* Pods-CLTableViewDataBinder */,
+				A6A8A1DABE8EEFE30F3F1568614CA417 /* Pods-CLTableViewManger */,
 				979486118B3E90C08386079D57962701 /* SnapKit */,
 				B9DCB5EC0B1CDADD221717CADDF62359 /* SnapKit-SnapKit_Privacy */,
 			);
@@ -516,7 +516,7 @@
 		46EB2E00000070 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00001B40 /* Pods-CLTableViewDataBinder */,
+				46EB2E00001B40 /* Pods-CLTableViewManger */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -806,21 +806,21 @@
 			path = "../Target Support Files/SwiftFormat";
 			sourceTree = "<group>";
 		};
-		46EB2E00001B40 /* Pods-CLTableViewDataBinder */ = {
+		46EB2E00001B40 /* Pods-CLTableViewManger */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00001B80 /* Pods-CLTableViewDataBinder.modulemap */,
-				46EB2E00001BD0 /* Pods-CLTableViewDataBinder-acknowledgements.markdown */,
-				46EB2E00001BC0 /* Pods-CLTableViewDataBinder-acknowledgements.plist */,
-				46EB2E00001BE0 /* Pods-CLTableViewDataBinder-dummy.m */,
-				46EB2E00001BB0 /* Pods-CLTableViewDataBinder-frameworks.sh */,
-				46EB2E00001B70 /* Pods-CLTableViewDataBinder-Info.plist */,
-				46EB2E00001B90 /* Pods-CLTableViewDataBinder-umbrella.h */,
-				46EB2E00001B60 /* Pods-CLTableViewDataBinder.debug.xcconfig */,
-				46EB2E00001B50 /* Pods-CLTableViewDataBinder.release.xcconfig */,
+				46EB2E00001B80 /* Pods-CLTableViewManger.modulemap */,
+				46EB2E00001BD0 /* Pods-CLTableViewManger-acknowledgements.markdown */,
+				46EB2E00001BC0 /* Pods-CLTableViewManger-acknowledgements.plist */,
+				46EB2E00001BE0 /* Pods-CLTableViewManger-dummy.m */,
+				46EB2E00001BB0 /* Pods-CLTableViewManger-frameworks.sh */,
+				46EB2E00001B70 /* Pods-CLTableViewManger-Info.plist */,
+				46EB2E00001B90 /* Pods-CLTableViewManger-umbrella.h */,
+				46EB2E00001B60 /* Pods-CLTableViewManger.debug.xcconfig */,
+				46EB2E00001B50 /* Pods-CLTableViewManger.release.xcconfig */,
 			);
-			name = "Pods-CLTableViewDataBinder";
-			path = "Target Support Files/Pods-CLTableViewDataBinder";
+			name = "Pods-CLTableViewManger";
+			path = "Target Support Files/Pods-CLTableViewManger";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -917,7 +917,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00001BA0 /* Pods-CLTableViewDataBinder-umbrella.h in Headers */,
+				46EB2E00001BA0 /* Pods-CLTableViewManger-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -941,6 +941,27 @@
 			name = SnapKit;
 			productName = SnapKit;
 			productReference = 979486118B3E90C08386079D57962701 /* SnapKit */;
+			productType = "com.apple.product-type.framework";
+		};
+		513FE2600492F00F04349B9E0F34F5EC /* Pods-CLTableViewManger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46EB2E00001AB0 /* Build configuration list for PBXNativeTarget "Pods-CLTableViewManger" */;
+			buildPhases = (
+				46EB2E00001AF0 /* Headers */,
+				46EB2E00001B00 /* Sources */,
+				46EB2E00001B10 /* Frameworks */,
+				46EB2E00001B20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46EB2E00001C10 /* PBXTargetDependency */,
+				46EB2E00001C30 /* PBXTargetDependency */,
+				46EB2E00001C50 /* PBXTargetDependency */,
+			);
+			name = "Pods-CLTableViewManger";
+			productName = Pods_CLTableViewManger;
+			productReference = A6A8A1DABE8EEFE30F3F1568614CA417 /* Pods-CLTableViewManger */;
 			productType = "com.apple.product-type.framework";
 		};
 		638FEAAFC575BB76BC6AC055CDDA3506 /* LookinServer */ = {
@@ -978,27 +999,6 @@
 			productReference = B9DCB5EC0B1CDADD221717CADDF62359 /* SnapKit-SnapKit_Privacy */;
 			productType = "com.apple.product-type.bundle";
 		};
-		F20066E0CB81ABF309CD2B4CC274B435 /* Pods-CLTableViewDataBinder */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 46EB2E00001AB0 /* Build configuration list for PBXNativeTarget "Pods-CLTableViewDataBinder" */;
-			buildPhases = (
-				46EB2E00001AF0 /* Headers */,
-				46EB2E00001B00 /* Sources */,
-				46EB2E00001B10 /* Frameworks */,
-				46EB2E00001B20 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				46EB2E00001C10 /* PBXTargetDependency */,
-				46EB2E00001C30 /* PBXTargetDependency */,
-				46EB2E00001C50 /* PBXTargetDependency */,
-			);
-			name = "Pods-CLTableViewDataBinder";
-			productName = Pods_CLTableViewDataBinder;
-			productReference = 96F135ABC5533813986A90ABA0DA9F09 /* Pods-CLTableViewDataBinder */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1024,7 +1024,7 @@
 			projectRoot = "";
 			targets = (
 				638FEAAFC575BB76BC6AC055CDDA3506 /* LookinServer */,
-				F20066E0CB81ABF309CD2B4CC274B435 /* Pods-CLTableViewDataBinder */,
+				513FE2600492F00F04349B9E0F34F5EC /* Pods-CLTableViewManger */,
 				19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */,
 				8A8DB685241263AFDF5E6B20FE67B93A /* SnapKit-SnapKit_Privacy */,
 				1CD0618C486973D5588EF20D2E8C0AEA /* SwiftFormat */,
@@ -1195,7 +1195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00001BF0 /* Pods-CLTableViewDataBinder-dummy.m in Sources */,
+				46EB2E00001BF0 /* Pods-CLTableViewManger-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1614,7 +1614,7 @@
 		};
 		46EB2E00001AC0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00001B50 /* Pods-CLTableViewDataBinder.release.xcconfig */;
+			baseConfigurationReference = 46EB2E00001B50 /* Pods-CLTableViewManger.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1629,7 +1629,7 @@
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-CLTableViewDataBinder/Pods-CLTableViewDataBinder-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-CLTableViewManger/Pods-CLTableViewManger-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1638,7 +1638,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CLTableViewDataBinder/Pods-CLTableViewDataBinder.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-CLTableViewManger/Pods-CLTableViewManger.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1656,7 +1656,7 @@
 		};
 		46EB2E00001AD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00001B60 /* Pods-CLTableViewDataBinder.debug.xcconfig */;
+			baseConfigurationReference = 46EB2E00001B60 /* Pods-CLTableViewManger.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1671,7 +1671,7 @@
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-CLTableViewDataBinder/Pods-CLTableViewDataBinder-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-CLTableViewManger/Pods-CLTableViewManger-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1680,7 +1680,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CLTableViewDataBinder/Pods-CLTableViewDataBinder.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-CLTableViewManger/Pods-CLTableViewManger.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				OTHER_SWIFT_FLAGS = "$(inherited) -Onone";
@@ -1745,7 +1745,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46EB2E00001AB0 /* Build configuration list for PBXNativeTarget "Pods-CLTableViewDataBinder" */ = {
+		46EB2E00001AB0 /* Build configuration list for PBXNativeTarget "Pods-CLTableViewManger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				46EB2E00001AD0 /* Debug */,

@@ -1,38 +1,32 @@
 //
-//  CLTableViewDataBinder.swift
-//  CLTableViewDataBinder
+//  CLTableViewManager.swift
+//  CLTableViewManager
 //
 //  Created by JmoVxia on 2025/10/16.
 //
 
 import UIKit
 
-public class CLTableViewDataBinder<T: CLDataSourceItemProtocol>: NSObject, UITableViewDelegate, UITableViewDataSource {
+public class CLTableViewManager: NSObject {
     private weak var delegate: UITableViewDelegate?
 
-    public var dataSource = [T]()
+    typealias dataSource = [CLDataSourceItemProtocol]
 
-    public init(delegate: UITableViewDelegate? = nil) {
+    init(delegate: UITableViewDelegate? = nil) {
         self.delegate = delegate
         super.init()
     }
 
-    override public func forwardingTarget(for aSelector: Selector!) -> Any? {
-        if super.responds(to: aSelector) {
-            return self
-        } else if let delegate = delegate, delegate.responds(to: aSelector) {
-            return delegate
-        }
-        return self
+    func sectionItem(for section: Int) -> CLSectionItemProtocol? {
+        nil
     }
 
-    override public func responds(to aSelector: Selector!) -> Bool {
-        if let delegate = delegate {
-            return super.responds(to: aSelector) || delegate.responds(to: aSelector)
-        }
-        return super.responds(to: aSelector)
+    func itemForIndexPath(_ indexPath: IndexPath) -> CLRowItemProtocol? {
+        nil
     }
+}
 
+extension CLTableViewManager: UITableViewDelegate {
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let delegate = delegate, delegate.responds(to: #selector(tableView(_:didSelectRowAt:))) {
             delegate.tableView?(tableView, didSelectRowAt: indexPath)
@@ -105,9 +99,11 @@ public class CLTableViewDataBinder<T: CLDataSourceItemProtocol>: NSObject, UITab
         }
         sectionItem(for: section)?.didEndDisplayingFooter?(section)
     }
+}
 
+extension CLTableViewManager: UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        T.self is CLSectionItemProtocol.Type ? (sectionItem(for: section)?.rows.count ?? .zero) : dataSource.count
+        .zero
     }
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -121,7 +117,7 @@ public class CLTableViewDataBinder<T: CLDataSourceItemProtocol>: NSObject, UITab
     }
 
     public func numberOfSections(in tableView: UITableView) -> Int {
-        T.self is CLSectionItemProtocol.Type ? dataSource.count : 1
+        .zero
     }
 
     public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -131,31 +127,25 @@ public class CLTableViewDataBinder<T: CLDataSourceItemProtocol>: NSObject, UITab
     public func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         dequeueReusableHeaderFooterView(for: section, in: tableView, isHeader: false)
     }
+}
 
-    @objc func didSelectHeaderView(_ gestureRecognizer: UITapGestureRecognizer) {
+@objc extension CLTableViewManager {
+    func didSelectHeaderView(_ gestureRecognizer: UITapGestureRecognizer) {
         guard let item = sectionItem(for: gestureRecognizer) else { return }
         item.0.didSelectHeader?(item.1)
     }
 
-    @objc func didSelectFooterView(_ gestureRecognizer: UITapGestureRecognizer) {
+    func didSelectFooterView(_ gestureRecognizer: UITapGestureRecognizer) {
         guard let item = sectionItem(for: gestureRecognizer) else { return }
         item.0.didSelectFooter?(item.1)
     }
 }
 
-private extension CLTableViewDataBinder {
-    func sectionItem(for section: Int) -> CLSectionItemProtocol? {
-        return dataSource[safe: section] as? CLSectionItemProtocol
-    }
-
+private extension CLTableViewManager {
     func sectionItem(for gestureRecognizer: UITapGestureRecognizer) -> (CLSectionItemProtocol, Int)? {
         guard let view = gestureRecognizer.view as? UITableViewHeaderFooterView else { return nil }
         guard let item = sectionItem(for: view.tag) else { return nil }
         return (item, view.tag)
-    }
-
-    func itemForIndexPath(_ indexPath: IndexPath) -> CLRowItemProtocol? {
-        T.self is CLSectionItemProtocol.Type ? sectionItem(for: indexPath.section)?.rows[safe: indexPath.row] : (dataSource[safe: indexPath.row] as? CLRowItemProtocol)
     }
 
     func dequeueReusableHeaderFooterView(for section: Int, in tableView: UITableView, isHeader: Bool) -> UIView? {
@@ -189,7 +179,25 @@ private extension CLTableViewDataBinder {
     }
 }
 
-private extension Array {
+public extension CLTableViewManager {
+    override func forwardingTarget(for aSelector: Selector!) -> Any? {
+        if super.responds(to: aSelector) {
+            return self
+        } else if let delegate = delegate, delegate.responds(to: aSelector) {
+            return delegate
+        }
+        return self
+    }
+
+    override func responds(to aSelector: Selector!) -> Bool {
+        if let delegate = delegate {
+            return super.responds(to: aSelector) || delegate.responds(to: aSelector)
+        }
+        return super.responds(to: aSelector)
+    }
+}
+
+public extension Array {
     subscript(safe index: Index) -> Element? {
         return indices.contains(index) ? self[index] : nil
     }
