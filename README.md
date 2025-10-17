@@ -13,12 +13,31 @@ CLTableViewManger 是一个轻量的数据驱动 UITableView 管理器，目标�
   - Section 模型遵守 `CLSectionItemProtocol`（可选择提供 header/footer 类型、rows 列表、回调等）。
   - Cell/Header/Footer 可以遵守对应协议以便自动 set 数据：`CLRowCellBaseProtocol` / `CLRowCellProtocol` / `CLSectionHeaderFooterProtocol`（内部提供 set(item:indexPath:) / set(item:section:) 辅助）。
 
+
+
 #### 安装
 
-- CocoaPods
-  1. 在 Podfile 中添加：
-     pod 'CLTableViewManger'
-  2. 执行 `pod install`。
+##### Cocoapods
+
+```
+pod 'CLTableViewManager'
+```
+
+##### Swift Package Manager
+
+在 Xcode 中，选择 `File` > `Add Packages...`，然后输入包的 URL:
+
+```
+https://github.com/JmoVxia/CLTableViewManager.git
+```
+
+或者在你的 `Package.swift` 文件中添加依赖：
+
+```
+dependencies: [
+    .package(url: "https://github.com/JmoVxia/CLTableViewManager.git", from: "0.0.1")
+]
+```
 
 
 #### 快速开始
