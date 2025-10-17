@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.authors      = {'JmoVxia' => 'JmoVxia@gmail.com'}
   s.ios.deployment_target = '13.0'
-  s.source       = {:git => 'https://github.com/JmoVxia/CLTableViewManager', :tag => s.version}
+  s.source       = {:git => 'git@github.com:JmoVxia/CLTableViewManager.git', :tag => s.version}
   s.source_files = ['CLTableViewManager/**/*']
   s.swift_versions = ['5.0']
   s.requires_arc = true
