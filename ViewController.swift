@@ -12,12 +12,12 @@ import UIKit
 class ViewController: UIViewController {
     deinit {}
 
-    private let dataBinder = CLTableViewRowManager()
+    private let tableViewManager = CLTableViewRowManager()
 
     private lazy var tableView: UITableView = {
         let view = UITableView(frame: .zero, style: .plain)
-        view.dataSource = dataBinder
-        view.delegate = dataBinder
+        view.dataSource = tableViewManager
+        view.delegate = tableViewManager
         view.showsVerticalScrollIndicator = false
         view.showsHorizontalScrollIndicator = false
         view.separatorStyle = .none
@@ -94,7 +94,7 @@ private extension ViewController {
             item.didSelect = { [weak self] index in
                 self?.present(RowViewController(), animated: true)
             }
-            dataBinder.dataSource.append(item)
+            tableViewManager.dataSource.append(item)
         }
         do{
             let item = CLAboutItem()
@@ -103,7 +103,7 @@ private extension ViewController {
             item.didSelect = { [weak self] index in
                 self?.present(SectionViewController(), animated: true)
             }
-            dataBinder.dataSource.append(item)
+            tableViewManager.dataSource.append(item)
         }
         tableView.reloadData()
     }

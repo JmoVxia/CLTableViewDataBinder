@@ -11,12 +11,12 @@ import UIKit
 class SectionViewController: UIViewController {
     deinit {}
 
-    private let driver = CLTableViewSectionManager()
+    private let tableViewManager = CLTableViewSectionManager()
 
     private lazy var tableView: UITableView = {
         let view = UITableView(frame: .zero, style: .plain)
-        view.dataSource = driver
-        view.delegate = driver
+        view.dataSource = tableViewManager
+        view.delegate = tableViewManager
         view.showsVerticalScrollIndicator = false
         view.showsHorizontalScrollIndicator = false
         view.separatorStyle = .none
@@ -105,8 +105,8 @@ private extension SectionViewController {
             }
             return item
         }())
-        driver.dataSource.append(section)
-        driver.dataSource.append(section)
+        tableViewManager.dataSource.append(section)
+        tableViewManager.dataSource.append(section)
         
         tableView.reloadData()
     }

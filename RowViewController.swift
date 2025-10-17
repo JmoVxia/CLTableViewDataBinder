@@ -20,12 +20,12 @@ class RowViewController: UIViewController {
 
     deinit {}
 
-    private let driver = CLTableViewRowManager()
+    private let tableViewManager = CLTableViewRowManager()
 
     private lazy var tableView: UITableView = {
         let view = UITableView(frame: .zero, style: .plain)
-        view.dataSource = driver
-        view.delegate = driver
+        view.dataSource = tableViewManager
+        view.delegate = tableViewManager
         view.showsVerticalScrollIndicator = false
         view.showsHorizontalScrollIndicator = false
         view.separatorStyle = .none
@@ -103,7 +103,7 @@ private extension RowViewController {
             item.didSelect = { index in
                 print(index)
             }
-            driver.dataSource.append(item)
+            tableViewManager.dataSource.append(item)
         }
         tableView.reloadData()
     }

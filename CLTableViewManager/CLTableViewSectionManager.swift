@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CLTableViewSectionManager: CLTableViewManager {
+public class CLTableViewSectionManager: CLTableViewManager {
     public var dataSource: [CLSectionItemProtocol] = []
     
     public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

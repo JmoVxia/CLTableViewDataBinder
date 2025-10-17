@@ -13,7 +13,7 @@
 		4FC4CC422EA0F2F4004EAF40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC4CC392EA0F2F4004EAF40 /* LaunchScreen.storyboard */; };
 		4FC4CC432EA0F2F4004EAF40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC4CC362EA0F2F4004EAF40 /* AppDelegate.swift */; };
 		4FC4CC442EA0F2F4004EAF40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC4CC3B2EA0F2F4004EAF40 /* SceneDelegate.swift */; };
-		4FC4CC492EA0F3F6004EAF40 /* CLTableViewManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC4CC482EA0F3F6004EAF40 /* CLTableViewManger.swift */; };
+		4FC4CC492EA0F3F6004EAF40 /* CLTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC4CC482EA0F3F6004EAF40 /* CLTableViewManager.swift */; };
 		4FC4CC4B2EA0F42F004EAF40 /* CLDataSourceItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC4CC4A2EA0F42F004EAF40 /* CLDataSourceItemProtocol.swift */; };
 		4FC4CC4D2EA0F447004EAF40 /* CLSectionItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC4CC4C2EA0F447004EAF40 /* CLSectionItemProtocol.swift */; };
 		4FC4CC4F2EA0F485004EAF40 /* CLRowItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC4CC4E2EA0F485004EAF40 /* CLRowItemProtocol.swift */; };
@@ -35,14 +35,14 @@
 
 /* Begin PBXFileReference section */
 		1D896094A1F1DA9A2F5D6FB6 /* Pods-CLTableViewManger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLTableViewManger.release.xcconfig"; path = "Target Support Files/Pods-CLTableViewManger/Pods-CLTableViewManger.release.xcconfig"; sourceTree = "<group>"; };
-		4F6A56512EA0F26B001A903C /* CLTableViewManger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLTableViewManger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F6A56512EA0F26B001A903C /* CLTableViewManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLTableViewManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FC4CC362EA0F2F4004EAF40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FC4CC372EA0F2F4004EAF40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FC4CC382EA0F2F4004EAF40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FC4CC3B2EA0F2F4004EAF40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4FC4CC3D2EA0F2F4004EAF40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4FC4CC3E2EA0F2F4004EAF40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4FC4CC482EA0F3F6004EAF40 /* CLTableViewManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLTableViewManger.swift; sourceTree = "<group>"; };
+		4FC4CC482EA0F3F6004EAF40 /* CLTableViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLTableViewManager.swift; sourceTree = "<group>"; };
 		4FC4CC4A2EA0F42F004EAF40 /* CLDataSourceItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLDataSourceItemProtocol.swift; sourceTree = "<group>"; };
 		4FC4CC4C2EA0F447004EAF40 /* CLSectionItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLSectionItemProtocol.swift; sourceTree = "<group>"; };
 		4FC4CC4E2EA0F485004EAF40 /* CLRowItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLRowItemProtocol.swift; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 		4F6A56482EA0F26B001A903C = {
 			isa = PBXGroup;
 			children = (
-				4FC4CC472EA0F3B6004EAF40 /* CLTableViewManger */,
+				4FC4CC472EA0F3B6004EAF40 /* CLTableViewManager */,
 				4FC4CC362EA0F2F4004EAF40 /* AppDelegate.swift */,
 				4FC4CC5D2EA0FABE004EAF40 /* UIColor+Extension.swift */,
 				4FC4CC5B2EA0FAB8004EAF40 /* UIFont+Extension.swift */,
@@ -107,15 +107,15 @@
 		4F6A56522EA0F26B001A903C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4F6A56512EA0F26B001A903C /* CLTableViewManger.app */,
+				4F6A56512EA0F26B001A903C /* CLTableViewManager.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4FC4CC472EA0F3B6004EAF40 /* CLTableViewManger */ = {
+		4FC4CC472EA0F3B6004EAF40 /* CLTableViewManager */ = {
 			isa = PBXGroup;
 			children = (
-				4FC4CC482EA0F3F6004EAF40 /* CLTableViewManger.swift */,
+				4FC4CC482EA0F3F6004EAF40 /* CLTableViewManager.swift */,
 				4FC4CC632EA11340004EAF40 /* CLTableViewRowManager.swift */,
 				4FC4CC652EA11641004EAF40 /* CLTableViewSectionManager.swift */,
 				4FC4CC4A2EA0F42F004EAF40 /* CLDataSourceItemProtocol.swift */,
@@ -124,7 +124,7 @@
 				4FC4CC502EA0F4BE004EAF40 /* CLSectionHeaderFooterProtocol.swift */,
 				4FC4CC542EA0F53A004EAF40 /* CLRowCellProtocol.swift */,
 			);
-			path = CLTableViewManger;
+			path = CLTableViewManager;
 			sourceTree = "<group>";
 		};
 		AC34B17FAE5C20BB9E887490 /* Pods */ = {
@@ -149,9 +149,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4F6A56502EA0F26B001A903C /* CLTableViewManger */ = {
+		4F6A56502EA0F26B001A903C /* CLTableViewManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F6A56642EA0F26C001A903C /* Build configuration list for PBXNativeTarget "CLTableViewManger" */;
+			buildConfigurationList = 4F6A56642EA0F26C001A903C /* Build configuration list for PBXNativeTarget "CLTableViewManager" */;
 			buildPhases = (
 				BF31DEAA9E4BD7319618D514 /* [CP] Check Pods Manifest.lock */,
 				4F6A564D2EA0F26B001A903C /* Sources */,
@@ -163,9 +163,9 @@
 			);
 			dependencies = (
 			);
-			name = CLTableViewManger;
+			name = CLTableViewManager;
 			productName = CLTableViewDataBinder;
-			productReference = 4F6A56512EA0F26B001A903C /* CLTableViewManger.app */;
+			productReference = 4F6A56512EA0F26B001A903C /* CLTableViewManager.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -183,7 +183,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4F6A564C2EA0F26B001A903C /* Build configuration list for PBXProject "CLTableViewManger" */;
+			buildConfigurationList = 4F6A564C2EA0F26B001A903C /* Build configuration list for PBXProject "CLTableViewManager" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -197,7 +197,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4F6A56502EA0F26B001A903C /* CLTableViewManger */,
+				4F6A56502EA0F26B001A903C /* CLTableViewManager */,
 			);
 		};
 /* End PBXProject section */
@@ -224,9 +224,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CLTableViewManger/Pods-CLTableViewManger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CLTableViewManger/Pods-CLTableViewManger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -278,7 +282,7 @@
 				4FC4CC582EA0F9BE004EAF40 /* CLAboutItem.swift in Sources */,
 				4FC4CC602EA0FB0C004EAF40 /* ViewController.swift in Sources */,
 				4FC4CC552EA0F53A004EAF40 /* CLRowCellProtocol.swift in Sources */,
-				4FC4CC492EA0F3F6004EAF40 /* CLTableViewManger.swift in Sources */,
+				4FC4CC492EA0F3F6004EAF40 /* CLTableViewManager.swift in Sources */,
 				4FC4CC6A2EA11B45004EAF40 /* CLSectionHeadView.swift in Sources */,
 				4FC4CC5E2EA0FABE004EAF40 /* UIColor+Extension.swift in Sources */,
 				4FC4CC4F2EA0F485004EAF40 /* CLRowItemProtocol.swift in Sources */,
@@ -491,7 +495,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4F6A564C2EA0F26B001A903C /* Build configuration list for PBXProject "CLTableViewManger" */ = {
+		4F6A564C2EA0F26B001A903C /* Build configuration list for PBXProject "CLTableViewManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4F6A56672EA0F26C001A903C /* Debug */,
@@ -500,7 +504,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F6A56642EA0F26C001A903C /* Build configuration list for PBXNativeTarget "CLTableViewManger" */ = {
+		4F6A56642EA0F26C001A903C /* Build configuration list for PBXNativeTarget "CLTableViewManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4F6A56652EA0F26C001A903C /* Debug */,
