@@ -12,7 +12,7 @@ public class CLTableViewManager: NSObject {
 
     typealias dataSource = [CLDataSourceItemProtocol]
 
-    init(delegate: UITableViewDelegate? = nil) {
+    public init(delegate: UITableViewDelegate? = nil) {
         self.delegate = delegate
         super.init()
     }
