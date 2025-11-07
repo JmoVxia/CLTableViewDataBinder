@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'CLTableViewManager'
-  s.version      = '0.0.3'
+  s.version      = '0.0.4'
   s.summary      = 'CLTableViewManager'
   s.homepage     = 'https://github.com/JmoVxia/CLTableViewManager'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
